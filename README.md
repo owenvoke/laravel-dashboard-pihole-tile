@@ -38,12 +38,17 @@ return [
 
 In `app\Console\Kernel.php` you should schedule the `OwenVoke\PiholeTile\Commands\FetchPiholeSummaryCommand` to run every `10` minutes.
 
+If you want to use the "Top items" tile, you should schedule the `OwenVoke\PiholeTile\Commands\FetchPiholeTopItemsCommand` to run every `x` minutes.
+
 ```php
 // in app/console/Kernel.php
 
 protected function schedule(Schedule $schedule)
 {
     $schedule->command(OwenVoke\PiholeTile\Commands\FetchPiholeSummaryCommand::class)->everyTenMinutes();
+
+    // Required for the "Top items" tile
+    $schedule->command(OwenVoke\PiholeTile\Commands\FetchPiholeTopItemsCommand::class)->everyTenMinutes();
 }
 ```
 
@@ -52,6 +57,9 @@ In your dashboard view you use the `livewire:pihole-summary-tile` component.
 ```blade
 <x-dashboard>
     <livewire:pihole-summary-tile position="a1" />
+
+    <!-- This package also provides a "Top items" tile -->
+    <livewire:pihole-top-items-tile position="b1" />
 </x-dashboard>
 ```
 
