@@ -5,16 +5,19 @@ namespace OwenVoke\PiholeTile;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
 use OwenVoke\PiholeTile\Commands\FetchPiholeSummaryCommand;
+use OwenVoke\PiholeTile\Commands\FetchPiholeTopItemsCommand;
 
 class PiholeTileServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
         Livewire::component('pihole-summary-tile', PiholeSummaryTileComponent::class);
+        Livewire::component('pihole-top-items-tile', PiholeTopItemsTileComponent::class);
 
         if ($this->app->runningInConsole()) {
             $this->commands([
                 FetchPiholeSummaryCommand::class,
+                FetchPiholeTopItemsCommand::class,
             ]);
         }
 

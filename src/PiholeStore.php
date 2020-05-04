@@ -34,4 +34,28 @@ class PiholeStore
             'ads_percentage_today' => 0,
         ];
     }
+
+    public function setTopQueries(array $topQueries): self
+    {
+        $this->tile->putData('topQueries', $topQueries);
+
+        return $this;
+    }
+
+    public function topQueries(): array
+    {
+        return $this->tile->getData('topQueries') ?? [];
+    }
+
+    public function setTopAds(array $topAds): self
+    {
+        $this->tile->putData('topAds', $topAds);
+
+        return $this;
+    }
+
+    public function topAds(): array
+    {
+        return $this->tile->getData('topAds') ?? [];
+    }
 }
