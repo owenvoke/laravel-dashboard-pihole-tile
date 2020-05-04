@@ -15,7 +15,7 @@ class PiholeStore
 
     public function __construct()
     {
-        $this->tile = Tile::firstOrCreateForName('google_fit');
+        $this->tile = Tile::firstOrCreateForName('pihole');
     }
 
     public function setSummary(array $summary): self
