@@ -2,7 +2,6 @@
 
 namespace OwenVoke\PiholeTile;
 
-use Carbon\CarbonInterval;
 use Livewire\Component;
 
 class PiholeSummaryTileComponent extends Component

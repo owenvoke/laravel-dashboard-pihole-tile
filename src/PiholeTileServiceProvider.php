@@ -4,9 +4,7 @@ namespace OwenVoke\PiholeTile;
 
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
-use OwenVoke\PiholeTile\Commands\FetchPiholeSleepCommand;
 use OwenVoke\PiholeTile\Commands\FetchPiholeSummaryCommand;
-use OwenVoke\PiholeTile\Commands\RefreshPiholeTokenCommand;
 
 class PiholeTileServiceProvider extends ServiceProvider
 {

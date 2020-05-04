@@ -28,10 +28,10 @@ class PiholeStore
     public function summary(): array
     {
         return $this->tile->getData('summary') ?? [
-                'domains_being_blocked' => 0,
-                'dns_queries_today' => 0,
-                'ads_blocked_today' => 0,
-                'ads_percentage_today' => 0,
-            ];
+            'domains_being_blocked' => 0,
+            'dns_queries_today' => 0,
+            'ads_blocked_today' => 0,
+            'ads_percentage_today' => 0,
+        ];
     }
 }
