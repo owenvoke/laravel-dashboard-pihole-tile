@@ -4,7 +4,6 @@
 [![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-github-actions]][link-github-actions]
 [![Style CI][ico-styleci]][link-styleci]
-[![Code Coverage][ico-code-coverage]][link-code-coverage]
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Buy us a tree][ico-treeware-gifting]][link-treeware-gifting]
 
@@ -104,14 +103,12 @@ Read more about Treeware at [treeware.earth][link-treeware].
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-github-actions]: https://img.shields.io/github/workflow/status/owenvoke/laravel-dashboard-pihole-tile/Continuous%20Integration.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/261038987/shield
-[ico-code-coverage]: https://img.shields.io/codecov/c/github/owenvoke/laravel-dashboard-pihole-tile.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/owenvoke/laravel-dashboard-pihole-tile.svg?style=flat-square
 [ico-treeware-gifting]: https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-lightgreen?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/owenvoke/laravel-dashboard-pihole-tile
 [link-github-actions]: https://github.com/owenvoke/laravel-dashboard-pihole-tile/actions
 [link-styleci]: https://styleci.io/repos/261038987
-[link-code-coverage]: https://codecov.io/gh/owenvoke/laravel-dashboard-pihole-tile
 [link-downloads]: https://packagist.org/packages/owenvoke/laravel-dashboard-pihole-tile
 [link-treeware]: https://treeware.earth
 [link-treeware-gifting]: https://offset.earth/owenvoke?gift-trees
