@@ -35,19 +35,19 @@ return [
 ];
 ```
 
-In `app\Console\Kernel.php` you should schedule the `OwenVoke\PiholeTile\Commands\FetchPiholeSummaryCommand` to run every `10` minutes.
+In `app\Console\Kernel.php` you should schedule the `\OwenVoke\PiholeTile\Commands\FetchPiholeSummaryCommand` to run every `10` minutes.
 
-If you want to use the "Top items" tile, you should schedule the `OwenVoke\PiholeTile\Commands\FetchPiholeTopItemsCommand` to run every `x` minutes.
+If you want to use the "Top items" tile, you should schedule the `\OwenVoke\PiholeTile\Commands\FetchPiholeTopItemsCommand` to run every `x` minutes.
 
 ```php
 // in app/console/Kernel.php
 
 protected function schedule(Schedule $schedule)
 {
-    $schedule->command(OwenVoke\PiholeTile\Commands\FetchPiholeSummaryCommand::class)->everyTenMinutes();
+    $schedule->command(\OwenVoke\PiholeTile\Commands\FetchPiholeSummaryCommand::class)->everyTenMinutes();
 
     // Required for the "Top items" tile
-    $schedule->command(OwenVoke\PiholeTile\Commands\FetchPiholeTopItemsCommand::class)->everyTenMinutes();
+    $schedule->command(\OwenVoke\PiholeTile\Commands\FetchPiholeTopItemsCommand::class)->everyTenMinutes();
 }
 ```
 
